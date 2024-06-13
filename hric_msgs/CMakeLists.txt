@@ -53,17 +53,17 @@ add_message_files(
   MotionStatus.msg
 )
 
-## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+# Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  SetMotionMode.srv
+)
 
 ## Generate actions in the 'action' folder
 add_action_files(
   FILES
   SetGoal.action
+  SetGoalArray.action
 )
 
 ## Generate added messages and services with any dependencies listed here

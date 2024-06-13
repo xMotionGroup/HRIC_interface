@@ -1,6 +1,6 @@
 #goal definition
-geometry_msgs/Pose goal
-uint32 navigation_mode
+geometry_msgs/PoseArray goal_list
+uint32[] navigation_mode_list
 ---
 #result definition
 uint32 error_code
