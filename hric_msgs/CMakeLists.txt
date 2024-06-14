@@ -51,12 +51,15 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   MotionStatus.msg
+  LocStatus.msg
 )
 
 # Generate services in the 'srv' folder
 add_service_files(
   FILES
   SetMotionMode.srv
+  SetLocMode.srv
+  Relocate.srv
 )
 
 ## Generate actions in the 'action' folder

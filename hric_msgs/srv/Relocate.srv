@@ -1,0 +1,10 @@
+#goal definition
+geometry_msgs/Pose pose_robot #机器人位姿
+uint8 pose_type #坐标类型
+uint8 scene_type #场景类型
+uint8 match_type #传感器数据与地图匹配类型
+---
+#result definition
+bool success #结果
+# Error codes
+uint16 error_code #错误码

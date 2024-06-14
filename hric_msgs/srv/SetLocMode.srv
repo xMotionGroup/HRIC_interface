@@ -1,0 +1,8 @@
+# uint8 MAPPING_MODE = 0
+# uint8 LOC_MODE = 1
+uint8 mode_type
+---
+# uint8 SUCCESS = 101
+# uint8 FAILED = 102
+uint8 result
+string description
