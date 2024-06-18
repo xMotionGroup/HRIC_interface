@@ -1,8 +1,12 @@
 #goal definition
 geometry_msgs/PoseArray goal_list
+#navigation mode: 0:直线导航 1:曲线导航 2:旋转调整姿态导航
 uint32[] navigation_mode_list
+# 1 直线拟合  2 曲线拟合  3 或其他无效标志
+uint8[] navigation_path_list
 ---
 #result definition
+# Error codes
 uint32 error_code
 ---
 #feedback definition

@@ -1,8 +1,14 @@
 #goal definition
 geometry_msgs/Pose goal
+#navigation mode: 0:直线导航 1:曲线导航 2:旋转调整姿态导航
 uint32 navigation_mode
+# 1 直线拟合  2 曲线拟合  3 或其他无效标志
+uint8 navigation_path
 ---
 #result definition
+# Error codes
+# Note: The expected priority order of the errors should match the message order
+
 uint32 error_code
 ---
 #feedback definition
