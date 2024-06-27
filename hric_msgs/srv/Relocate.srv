@@ -8,7 +8,7 @@ uint8 match_type #传感器数据与地图匹配类型
 #result definition
 bool success #结果
 # Error codes
-uint16 error_code
+uint32 error_code
 #错误码
 uint32 NONE=0
 uint32 UNKNOWN=200
