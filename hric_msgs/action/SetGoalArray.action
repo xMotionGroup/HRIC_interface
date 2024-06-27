@@ -8,5 +8,11 @@ uint8[] navigation_path_list
 #result definition
 # Error codes
 uint32 error_code
+#错误码
+uint32 NONE=0 #无异常
+uint32 UNKNOWN=100
+uint32 GOAL_OCCUPIED=101 #目标点被占用
+uint32 TIMEOUT=102 #规划超时
+uint32 NO_VALID_PATH=103 #无可通行路线
 ---
 #feedback definition

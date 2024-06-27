@@ -1,10 +1,17 @@
 #goal definition
 geometry_msgs/Pose pose_robot #机器人位姿
 uint8 pose_type #坐标类型
+
 uint8 scene_type #场景类型
 uint8 match_type #传感器数据与地图匹配类型
 ---
 #result definition
 bool success #结果
 # Error codes
-uint16 error_code #错误码
+uint16 error_code
+#错误码
+uint32 NONE=0
+uint32 UNKNOWN=200
+uint32 TF_ERROR=201 #TF错误
+uint32 SENSOR_ERROR=202 #传感器异常
+uint32 LOW_CONFIDENCE=203 #低置信度
